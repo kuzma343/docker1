@@ -12,3 +12,5 @@ docker push kuzma343/kuzma343firstpj:version1.9
 
 
 docker run -d -p 3000:3000  kuzma343/kuzma343firstpj:version1.9
+
+https://hub.docker.com/u/kuzma343
