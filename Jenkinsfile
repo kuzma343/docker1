@@ -8,14 +8,7 @@ pipeline {
     }
 
     stages {
-        stage('Підготовка') {
-            steps {
-                script {
-                    // Встановлюємо права доступу
-                    sh 'chmod 777 my-file-server2'
-                }
-            }
-        }
+        
         
        stage("docker login") {
             steps {
