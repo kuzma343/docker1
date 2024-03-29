@@ -2,6 +2,10 @@
 pipeline {
     agent any
 
+    environment {
+        // Додаємо креденшіали для Docker
+        DOCKER_CREDENTIALS_ID = 'dockerHub'
+    }
    
 
     stages {
