@@ -13,7 +13,9 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/build@v1
+      - uses: actions/checkout@v2
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v1
       - name: build docker app
         run: |
           docker build -t kuzma343/kuzma343firstpj:version1.9 .
